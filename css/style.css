@@ -5,433 +5,6 @@ body {
   font-family: Arial, Helvetica, sans-serif, monospace;
 }
 
-header {
-  position: relative;
-  width: 100%;
-  height: auto;
-  background: #34375d;
-  padding: 0px 20px;
-}
-
-.Header_block_logo {
-  position: relative;
-  width: 100%;
-}
-
-.Header_block_logo img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -webkit-filter: invert(1);
-  filter: invert(1);
-}
-
-.Menu,
-.Registr_login {
-  position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 100%;
-  list-style: none;
-  padding: 0px;
-  margin-bottom: 0px;
-}
-
-.Menu li,
-.Registr_login li {
-  position: relative;
-  font-size: 20px;
-  font-weight: 300;
-  display: inline-block;
-  color: white;
-  margin: 0px 30px;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-.Menu li:hover,
-.Registr_login li:hover {
-  color: grey;
-  background: #45475b;
-}
-
-.Menu li a,
-.Registr_login li a {
-  text-decoration: none;
-  color: white;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.Menu li a:hover,
-.Registr_login li a:hover {
-  color: grey;
-}
-
-.Menu_Down {
-  position: absolute;
-  top: 0px;
-  left: 100%;
-  width: 300px;
-  height: auto;
-  background: #45475b;
-  list-style: none;
-  -webkit-transition-delay: 0.1s;
-  -o-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-  visibility: hidden;
-  opacity: 0;
-  list-style: none;
-  padding: 20px 35px;
-  -webkit-transform: translate(-126px, 33px);
-  -ms-transform: translate(-126px, 33px);
-  transform: translate(-126px, 33px);
-}
-
-.Menu_Down li {
-  position: relative;
-  font-size: 20px;
-  font-weight: 300;
-  display: block;
-  margin: 20px 0px;
-}
-
-.Menu_Down li a {
-  position: relative;
-  text-decoration: none;
-  color: white;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.Menu li:hover .Menu_Down {
-  visibility: visible;
-  opacity: 1;
-  z-index: 999;
-}
-
-.Cursi::before {
-  content: "";
-  position: absolute;
-  right: 100%;
-  width: 20px;
-  height: 20px;
-  background: url("../img/router.png") no-repeat 50% 50%/cover;
-  -webkit-transform: translate(-11px, 5px);
-  -ms-transform: translate(-11px, 5px);
-  transform: translate(-11px, 5px);
-  -webkit-filter: brightness(0.7);
-  filter: brightness(0.7);
-}
-
-.Profici::before {
-  content: "";
-  position: absolute;
-  right: 100%;
-  width: 20px;
-  height: 20px;
-  background: url("../img/Obraz.png") no-repeat 50% 50%/cover;
-  -webkit-transform: translate(-11px, 5px);
-  -ms-transform: translate(-11px, 5px);
-  transform: translate(-11px, 5px);
-  -webkit-filter: brightness(0.7);
-  filter: brightness(0.7);
-}
-
-.Molnia::before {
-  content: "";
-  position: absolute;
-  right: 100%;
-  width: 20px;
-  height: 20px;
-  background: url("../img/Molnia.png") no-repeat 50% 50%/cover;
-  -webkit-transform: translate(-11px, 5px);
-  -ms-transform: translate(-11px, 5px);
-  transform: translate(-11px, 5px);
-  -webkit-filter: brightness(0.7);
-  filter: brightness(0.7);
-}
-
-.Molnia::after {
-  content: "▾";
-  position: absolute;
-  left: 100%;
-  font-size: 20px;
-  font-weight: 900;
-  color: #b2b2b2;
-  -webkit-transform: translate(11px, 0px);
-  -ms-transform: translate(11px, 0px);
-  transform: translate(11px, 0px);
-}
-
-.Registr::before {
-  content: "";
-  position: absolute;
-  right: 100%;
-  width: 20px;
-  height: 20px;
-  background: url("../img/Registr.png") no-repeat 50% 50%/cover;
-  -webkit-transform: translate(-5px, 5px);
-  -ms-transform: translate(-5px, 5px);
-  transform: translate(-5px, 5px);
-  -webkit-filter: brightness(0.7);
-  filter: brightness(0.7);
-}
-
-.Login::before {
-  content: "";
-  position: absolute;
-  right: 100%;
-  width: 20px;
-  height: 20px;
-  background: url("../img/Login.png") no-repeat 50% 50%/cover;
-  -webkit-transform: translate(-5px, 5px);
-  -ms-transform: translate(-5px, 5px);
-  transform: translate(-5px, 5px);
-  -webkit-filter: brightness(0.7);
-  filter: brightness(0.7);
-}
-
-.Header-phone {
-  position: fixed;
-  top: 0px;
-  left: 0%;
-  width: 100%;
-  height: 70px;
-  background: #34375d;
-  display: none;
-  z-index: 999;
-}
-
-.Menu_phone {
-  position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 100%;
-  list-style: none;
-  padding: 0px;
-  margin-bottom: 0px;
-}
-
-.Menu_phone li {
-  position: relative;
-  display: inline-block;
-  margin: 0px 30px;
-}
-
-.Header_phone_Open_close {
-  position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 100%;
-}
-
-.Open {
-  position: relative;
-  font-size: 50px;
-  font-weight: 500;
-  color: white;
-  display: none;
-}
-
-.Close {
-  position: absolute;
-  top: 0;
-  font-size: 30px;
-  font-weight: 500;
-  color: white;
-  visibility: hidden;
-  z-index: 9;
-  -webkit-transform: translate(-1px, 14px);
-  -ms-transform: translate(-1px, 14px);
-  transform: translate(-1px, 14px);
-}
-
-.Heder_modal {
-  position: fixed;
-  top: 70px;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  background: rgba(52, 55, 93, 0.9607843137);
-  display: none;
-  z-index: 999;
-}
-
-.Menu_modal {
-  position: relative;
-  width: 100%;
-  height: auto;
-  list-style: none;
-  padding: 0px;
-  margin-bottom: 0px;
-}
-
-.Menu_modal li {
-  position: relative;
-  font-size: 20px;
-  font-weight: 500;
-  display: block;
-  color: white;
-  margin: 20px 0px;
-  padding-bottom: 10px;
-  border-bottom: solid 1px whitesmoke;
-}
-
-.Menu_modal li:hover {
-  color: grey;
-}
-
-.Menu_modal li a {
-  text-decoration: none;
-  color: white;
-}
-
-/*///////////////////////////////////////////////////////////////////////////////////////////////*/
-
-#Title_block {
-  position: relative;
-  width: 100%;
-  height: auto;
-  background: #20202d;
-}
-
-.Caruseland {
-  position: relative;
-  width: 100%;
-  height: auto;
-  border-radius: 50px;
-  -webkit-box-shadow: 0px 0px 0px 0px black;
-  box-shadow: 0px 0px 0px 0px black;
-  padding-bottom: 50px;
-}
-
-.Carusel_block_content {
-  position: relative;
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.Carusel_block_text {
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding-right: 20px;
-}
-
-.Carusel_block_text h5 {
-  position: relative;
-  text-transform: uppercase;
-  font-size: 50px;
-  font-weight: 500;
-  color: white;
-}
-
-.Carusel_block_text p {
-  position: relative;
-  font-size: 18px;
-  font-weight: 300;
-  color: white;
-}
-
-.Carusel_block_img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.Carusel_block_img img {
-  position: relative;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.Carusel-item {
-  position: relative;
-  height: 100%;
-}
-
-.carusel {
-  position: relative;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.Carusel-control-left {
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  border: none;
-  background: none;
-  margin-right: 50px;
-  -webkit-transform: translate(0px, -50%);
-  -ms-transform: translate(0px, -50%);
-  transform: translate(0px, -50%);
-  outline: none !important;
-}
-
-.Carusel-control-right {
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  border: none;
-  background: none;
-  margin-left: 50px;
-  -webkit-transform: translate(0px, -50%);
-  -ms-transform: translate(0px, -50%);
-  transform: translate(0px, -50%);
-  outline: none !important;
-}
-
-.Carusel-prev-icon {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  display: block;
-  background: url("https://img.icons8.com/ios-filled/50/null/chevron-left.png") no-repeat 50% 50%/cover;
-  -webkit-filter: contrast(0);
-  filter: contrast(0);
-}
-
-.Carusel-next-icon {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  display: block;
-  background: url("https://img.icons8.com/ios-filled/50/null/chevron-right.png") no-repeat 50% 50%/cover;
-  -webkit-filter: contrast(0);
-  filter: contrast(0);
-}
-
-.carousel-indicators [data-bs-target] {
-  width: 5px;
-  height: 16px;
-  border-radius: 50%;
-  margin: 0px 10px;
-}
-
 /*_______________________________________________________________________________________________________________________*/
 
 #Content {
@@ -451,23 +24,121 @@ header {
   padding-left: 50px;
 }
 
-.Content_block_Text_info h5 {
+.Content_block_Text_info h1 {
   position: relative;
   font-size: 50px;
   font-weight: 900;
   color: black;
   padding-bottom: 10px;
-  border-bottom: solid 1px rgb(160, 160, 160);
+  border-bottom: solid 2px rgb(160, 160, 160);
+}
+
+.Content_block_Text_info .Content_block_text_title {
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+  border: none;
 }
 
 .Content_block_Text_info p {
   position: relative;
   font-size: 20px;
   font-weight: 300;
+  margin-bottom: 50px;
 }
 
 .Content_block_Text_info p b {
   font-weight: 900;
+}
+
+.Content_block_text_img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.Content_block_img_text {
+  position: relative;
+  width: 35vw;
+  display: block;
+  margin: 0 auto;
+}
+
+.Content_block_img_text img {
+  position: relative;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.silka-klinika {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.silka-klinika:hover {
+  color: grey;
+}
+
+.End_text {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-top: solid 1px black;
+  padding-top: 20px;
+}
+
+.End_text p {
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.Content_block_Poular_info {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.Content_Popular_text {
+  width: 50%;
+}
+
+.silka-klinika-info {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: solid 1px black;
+  border-radius: 20px;
+  padding: 20px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.silka-klinika-info:hover {
+  color: white;
+  border: solid 1px black;
+  background: black;
 }
 
 .Citata {
@@ -483,7 +154,7 @@ header {
 .Citata::before {
   content: "ˮ";
   position: absolute;
-  bottom: 50%;
+  bottom: 81%;
   right: 100%;
   font-size: 5em;
   font-weight: 900;
@@ -511,272 +182,15 @@ header {
   font-weight: 300;
 }
 
-.Content_block_Poular_info {
-  position: relative;
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
-}
-
-.Content_Popular_text {
-  width: 50%;
-}
-
 /*_______________________________________________________________________________________________________________________*/
-
-#Form_block {
-  position: relative;
-  width: 100%;
-  height: auto;
-  background: #34375d;
-}
-
-.Form_Flex_block {
-  padding: 50px 0px;
-}
-
-.Form_flex_tovar_info {
-  position: relative;
-  width: 100%;
-  height: auto;
-  text-align: center;
-}
-
-.Form_flex_tovar_info p {
-  font-size: 19px;
-  font-weight: 300;
-  color: white;
-}
-
-.Form_flex_tovar_info h5 {
-  font-size: 25px;
-  font-weight: 500;
-  color: white;
-  background: darkblue;
-  padding: 15px;
-  border-radius: 20px;
-}
-
-.Form_flex_tovar_info span {
-  font-size: 30px;
-  font-weight: 300;
-  color: white;
-  background: #20202d;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-.Form_flex_img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.Form_flex_img img {
-  position: relative;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.Forma {
-  position: relative;
-  width: 100%;
-  height: auto;
-  background: darkblue;
-  padding: 20px;
-}
-
-.Forma label {
-  position: relative;
-  text-align: center;
-  width: 100%;
-  font-size: 19px;
-  font-weight: 500;
-  color: black;
-  margin-bottom: 20px;
-}
-
-.Forma input {
-  position: relative;
-  display: block;
-  margin-bottom: 20px;
-  width: 100%;
-  padding: 20px 10px;
-  border: solid 1px grey;
-  outline: none;
-  color: #b2b2b2;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.Form_knopka {
-  position: relative;
-  padding: 20px 20px;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 300;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 10px;
-  text-transform: uppercase;
-  background: greenyellow;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.Form_knopka:hover {
-  -webkit-box-shadow: 1px 1px 1px 1px white;
-  box-shadow: 1px 1px 1px 1px white;
-}
-
-.Form_knopka:active {
-  border: none !important;
-  outline: auto !important;
-}
-
-.Form_knopka:focus {
-  outline: none !important;
-  border: none !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-}
-
-/*_______________________________________________________________________________________________________________________*/
-
-@media only screen and (max-width: 1199px) {
-  .Menu li,
-  .Registr_login li {
-    font-size: 18px;
-    margin: 0px 24px;
-  }
-
-  .Carusel-control-right {
-    -webkit-transform: translate(-50px, -50%);
-    -ms-transform: translate(-50px, -50%);
-    transform: translate(-50px, -50%);
-  }
-
-  .Carusel-control-left {
-    -webkit-transform: translate(50px, -50%);
-    -ms-transform: translate(50px, -50%);
-    transform: translate(50px, -50%);
-  }
-}
 
 @media only screen and (max-width: 999px) {
-  .Header-phone {
-    display: block;
-  }
-
-  .Header_block,
-  .Header_down {
-    display: none;
-  }
-
-  .popular {
-    display: none;
-  }
-
-  .Citata {
-    margin: 0 auto;
-  }
-
-  .Open {
-    display: block;
-  }
-
-  .Carusel_block_content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
-  }
-
-  .Content_block_Text_info {
-    padding-left: 0px;
-  }
-
-  .Form_Flex_block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .Form_flex_img {
-    width: 35vw;
-    margin: 0 auto;
-  }
-
-  .Form_Flex_blocks_img {
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
-  }
-
-  .Form_Flex_blocks_tovar {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-    margin-bottom: 20px;
-  }
-
-  .Form_Flex_blocks_form {
-    -webkit-box-ordinal-group: 4;
-    -ms-flex-order: 3;
-    order: 3;
+  .Content_block_img_text {
+    width: 71vw;
   }
 }
 
 @media only screen and (max-width: 575px) {
-  .Header-modal-blocks {
-    width: 28vw;
-  }
-
-  .Carusel-control-right {
-    -webkit-transform: translate(-125px, -50%);
-    -ms-transform: translate(-125px, -50%);
-    transform: translate(-125px, -50%);
-  }
-
-  .Carusel-control-left {
-    -webkit-transform: translate(125px, -50%);
-    -ms-transform: translate(125px, -50%);
-    transform: translate(125px, -50%);
-  }
-
-  .Carusel_block_img {
-    width: 97vw;
-  }
-
-  .Carusel_block_text {
-    text-align: center;
-  }
-
-  .Carusel_block_text h5 {
-    font-size: 9vw;
-  }
-
-  .Carusel_block_text p {
-    font-size: 4vw;
-  }
-
   .Content_block_Text_info h5 {
     font-size: 8vw;
   }
@@ -784,42 +198,4 @@ header {
   .Content_block_Text_info p {
     font-size: 4vw;
   }
-
-  .Form_flex_tovar_info p {
-    font-size: 4vw;
-  }
-
-  .Form_flex_tovar_info h5 {
-    font-size: 5vw;
-  }
-
-  .Forma label {
-    font-size: 4vw;
-  }
-
-  .Forma input {
-    font-size: 4vw;
-  }
-
-  .Form_knopka {
-    font-size: 4vw;
-  }
-
-  .Form_flex_tovar_info span {
-    font-size: 10vw;
-  }
 }
-
-.webp .Cursi::before{ background: url(../img/router.webp) no-repeat 50% 50%/cover; }
-
-.webp .Profici::before{ background: url(../img/Obraz.webp) no-repeat 50% 50%/cover; }
-
-.webp .Molnia::before{ background: url(../img/Molnia.webp) no-repeat 50% 50%/cover; }
-
-.webp .Registr::before{ background: url(../img/Registr.webp) no-repeat 50% 50%/cover; }
-
-.webp .Login::before{ background: url(../img/Login.webp) no-repeat 50% 50%/cover; }
-
-.webp .Carusel-prev-icon{ background: url(https://img.icons8.com/ios-filled/50/null/chevron-left.webp) no-repeat 50% 50%/cover; }
-
-.webp .Carusel-next-icon{ background: url(https://img.icons8.com/ios-filled/50/null/chevron-right.webp) no-repeat 50% 50%/cover; }
